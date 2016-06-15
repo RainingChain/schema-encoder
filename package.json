@@ -1,0 +1,31 @@
+{
+
+    "name": "schema-encoder",
+    "version": "0.0.1",
+    "description": "Encode Javascript objects by following a schema to minimize bandwidth.",
+    "homepage": "https://github.com/rainingchain/schema-encoder",
+    "author": "Samuel Magnan <rainingchain@gmail.com>",
+
+    "keywords": [
+        "encoder",
+        "schema",
+        "javascript"
+    ],
+    
+    "engines" : {
+        "node": ">=0.8",
+        "npm": ">=1"
+    },
+    
+    "main": "bin/schema-encoder",
+    
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/rainingchain/schema-encoder.git"
+    },
+    
+    "licenses": [{
+        "type": "MIT",
+    }]
+
+}
