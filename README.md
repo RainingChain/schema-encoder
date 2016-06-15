@@ -45,9 +45,12 @@ The library is meant to be used in conjunction with a binary encoder that will c
 The keys can be associated with:
 
 `null` : Leave value intact. Useful for primitive or data not following a specific schema.
+
 `object | SchemaEncoder`: An embed schema. 
+
 `Array.of(object)`: Indicate that the key holds an array of objects following the `object` schema.
-`Function`: The function will hold the encode and decode logic for that key. The data will be encoded by `func(data,true)` and decoded via `func(data,false)`. This is useful for enums or to prevent cases that your binary encoder can't handle. Ex: If your binary encoder can only send integers and strings, that function could convert your float to a string to keep precision.
+
+`Function`: The function holds the encode and decode logic for that key. The data will be encoded by `func(data,true)` and decoded via `func(data,false)`. This is useful for enums or to prevent cases that your binary encoder can't handle. Ex: If your binary encoder can only send integers and strings, that function could convert your float to a string to keep precision.
 	
 Once the schema is created, you can use it to encode via `schema.encode(obj)` and decode via `schema.decode(encodedObj)`. `schema.decode(schema.encode(obj))` will return an object similar to `obj`.
 
