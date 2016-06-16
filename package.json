@@ -24,8 +24,6 @@
         "url" : "https://github.com/rainingchain/schema-encoder.git"
     },
     
-    "licenses": [{
-        "type": "MIT",
-    }]
+	"license":"MIT"
 
 }
